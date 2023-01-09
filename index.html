@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="preload" href="css/main_style.css" as="style">
+    <link rel="stylesheet" href="css/main_style.css">
+    <meta name="author" content="Equipo CandyShop">
+    <meta name="Keywords" content="Proyecto Final">
+    <meta name="copyright" content="Equipo CandyShop">
+    <title>CandyShop</title>
+</head>
+	<body>
+		<div class="principal">
+			<header>
+				<div class="titulo_proyecto">
+                    <img class="logo" src="https://imgs.search.brave.com/Wid4KbTTdBQdLhdZO8HUnLF49tRxUPsgWg4-btjOROU/rs:fit:800:800:1/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi92ZWN0/b3ItbG9nby1jYW5k/eS1zaG9wLWRhcmst/c2lnbmJvYXJkLXdy/YXBwZWQtc3dlZXRz/LXllbGxvdy1ncmVl/bi1wbGFzdGljLXBh/Y2thZ2Utb3JpZ2lu/YWwtZm9udC13b3Jk/cy1jYW5keS1zaG9w/LTExMTMxODgxOC5q/cGc" alt="logo">
+                    <a href="#" class="titulo">CandyShop</a>
+                </div>
+                <div class="info_user">
+                    <span class="username">Usuario</span><br>
+                    <span class="role">No Registrado</span>
+                </div>
+			</header>
+
+			<div class="nav">
+				<ul class="menu">
+					<li><a href="#tab1">Principal</a></li>
+					<li><a href="#tab2">Categorias</a>
+						<ul class="submenu">
+							<li><a href="#tab3">Caramelos</a></li>
+							<li><a href="#tab4">Chicles</a></li>
+							<li><a href="#tab5">Chocolates</a></li>
+							<li><a href="#tab6">Dulces Tipicos</a></li>
+							<li><a href="#tab7">Gelatinas</a></li>
+							<li><a href="#tab8">Gomitas</a></li>
+							<li><a href="#tab9">Malvaviscos</a></li>
+							<li><a href="#tab10">Paletas</a></li>
+							<li><a href="#tab11">Polvitos</a></li>
+						</ul>
+					</li>
+					<li><a href="#tab12">Acerca de</a></li>
+					<li><a href="#tab13">Preguntas Frecuentes</a></li>
+					<li><a href="#tab14">Contacto</a></li>
+					<li><a href="#tab15">Ayuda</a></li>
+				</ul>
+			</div>
+
+			<div class="contenedor">
+				<div class="secciones">
+					<article id="tab1">
+						<h1>Bienvenido a CandyShop</h1>
+					</article>
+					<article id="tab2">
+						<div class="contenedor-actividad">
+							<h1>Integrantes</h1>
+							<p>
+								<br/>Victor Hugo Morales Martinez <br/>
+								Líder de equipo  <br/>
+								Desarrollador de Back y Front <br/>
+								Desarrollé la parte del diseño de Front <br/><br/>
+							</p>
+							<p>
+								Marco Antonio Cruz Gomez<br/>
+								Trabajé la parte de los HTML, diseño de Front y parte de la base para el Back<br/><br/>
+							</p>
+							<p>
+								Axel Israel Añorve Gómez<br/>
+								Trabajé en el desarrollo del BackEnd especialmente en la base de datos y la maquetacion del frontend<br/><br/>
+							</p>
+						</div>
+					</article>
+					<article id="tab3">
+						<h1>Vistas del Proyecto</h1>
+						<ul>
+							<li>En el apartado de principal muestra la descripción de la página.</li>
+							<li>En el apartado Categorias se puede ver todas las opciones disponibles de dulces de nuestra tienda</li>
+							<li>En el apartado de Acerca de se muestra todos los integrantes y sus funciones de cada uno.</li>
+							<li>En el apartado de Contacto se muestra un formulario donde el cual el usuario mandará la información solicitada para poder poner se en contacto algún administrador o un profesor.</li>
+							<li>En el apartado de Ayuda muestra unas indicaciones para ciertas circunstancias si son necesarias.</li>
+						</ul>
+					</article>
+					<article id="tab4">
+						<div class="titulo-table">Formulario</div>
+						<form class="formulario-usuario">
+							<div class="form-row">
+								<div class="form-group">
+									<label for="nombre">Nombre Completo</label>
+									<input type="text" name="nombre" id="nombre" placeholder="Ingresa tu usuario">
+								</div>
+
+								<div class="form-group">
+									<label for="correoP">Correo Principal</label>
+									<input type="text" name="correoP" id="correoP" placeholder="Ingresa tu Correo Principal">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group">
+									<label for="asunto">Asunto</label>
+									<input type="text" name="asunto" id="asunto" placeholder="Ingresa tu Asunto">
+								</div>
+								<div class="form-group">
+									<label for="role">Tipo de Usuario</label>
+									<input type="text" name="role" id="role" placeholder="Ingresa tu Tipo de Usuario">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group group-textarea">
+									<label for="descripcion">Descripción</label>
+									<textarea name="descripcion" id="descripcion"></textarea>
+								</div>
+							</div>
+							<input type="hidden" name="id" id="id">
+							<input type="hidden" name="action" id="action" value="set">
+							<div class="botones-formulario-usuario">
+								<button id="btn-form-perfil">Enviar</button>
+							</div>
+						</form>
+					</article>
+					<article id="tab5">
+						<h1>Ayuda</h1>
+						<p>
+							Esta aplicación ayudará a profesores para subir sus materiales y poder insertar
+							sus actividades para que el, la o los alumnos puedan realizar por medio de
+							formularios o juegos de dichas actividades.....etc.<br><br>
+							Si se te olvida la contraseña deberás ingresar en el enlace ubicado en la barra
+							lateral derecha “se te olvidó la contraseña”, al ingresar se encuentra datos que te
+							piden para poder restablecer la contraseña o solo indicas tu correo electrónico y
+							palabra secreta y con ello ya se le envía la clave actual, se recomienda después
+							de eso cambiar su contraseña.
+						</p>
+					</article>
+					<article id="tab6">
+
+					</article>
+					<article id="tab7">
+
+					</article>
+				</div>
+			</div>
+
+			<div class="aside">
+				<div class="titulo-form">
+					Iniciar Sesión
+				</div>
+				<form class="formulario" id="formulario">
+					<div class="form-group">
+						<label for="usuario">Usuario</label>
+						<input type="text" name="usuario" id="usuario" placeholder="Ingresa tu usuario">
+					</div>
+
+					<div class="form-group">
+						<label for="password">Contraseña</label>
+						<input type="password" name="password" id="password" placeholder="Ingresa tu usuario">
+					</div>
+
+					<div class="form-group">
+						<label for="role">Rol</label>
+						<select name="role" id="role">
+							<option value="1">Administrador</option>
+							<option value="2">Gerente</option>
+							<option value="3">Empleado</option>
+							<option value="3">Cliente</option>
+						</select>
+					</div>
+
+					<button class="btn-form" id="btn-login">Iniciar Sesión</button>
+					<button class="btn-form btn-secondary">Registrarse</button>
+					<button class="btn-form btn-third">Recuperar Contraseña</button>
+					<p class="fecha" id="fecha"></p>
+				</form>
+			</div>
+
+			<div class="footer">
+				<span>Copyright &copy; 2023 CandyShop | Todos los derechos reservados</span>
+			</div>
+		</div>
+
+	</body>
+
+	</html>

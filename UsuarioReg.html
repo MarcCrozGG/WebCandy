@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="preload" href="css/main_style.css" as="style">
+    <link rel="stylesheet" href="css/main_style.css">
+    <meta name="author" content="Equipo CandyShop">
+    <meta name="Keywords" content="Proyecto Final">
+    <meta name="copyright" content="Equipo CandyShop">
+    <title>CandyShop</title>
+</head>
+    <body>
+        <div class="principal">
+            <header>
+                <div class="titulo_proyecto">
+                    <img class="logo" src="https://imgs.search.brave.com/Wid4KbTTdBQdLhdZO8HUnLF49tRxUPsgWg4-btjOROU/rs:fit:800:800:1/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi92ZWN0/b3ItbG9nby1jYW5k/eS1zaG9wLWRhcmst/c2lnbmJvYXJkLXdy/YXBwZWQtc3dlZXRz/LXllbGxvdy1ncmVl/bi1wbGFzdGljLXBh/Y2thZ2Utb3JpZ2lu/YWwtZm9udC13b3Jk/cy1jYW5keS1zaG9w/LTExMTMxODgxOC5q/cGc" alt="logo">
+                    <a href="#" class="titulo">CandyShop</a>
+                </div>
+                <div class="info_user">
+                    <span class="username">Usuario</span><br>
+                    <span class="role">Administrador</span>
+                </div>
+            </header>
+
+            <div class="nav">
+                <ul class="menu">
+                    <li><a href="#tab1">Producto</a>
+                        <ul class="submenu">
+                            <li><a href="#tab2">Carga de Productos</a></li>
+                            <li><a href="#tab3">Edicion de productos</a></li>
+                            <li><a href="#tab4">Eliminar producto</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tab5">Usuario</a>
+                    
+                        <ul class="submenu">
+                            <li><a href="#tab6">Actualizar Perfil</a></li>
+                            <li><a href="#tab7">Creacion de usuarios</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="#tab8">Ver pedidos actuales</a></li>
+                    <li><a href="#tab8">Graficos</a></li>
+                    <li><a href="#tab9">Acerca de</a>
+                        <ul class="submenu">
+                            <li><a href="#tab2">Soporte</a></li>
+                        <li><a href="#tab10">Ayuda</a></l>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+
+            <div class="contenedor">
+                <div class="secciones">
+                    <article id="tab1">
+                        <div class="titulo-table">Administradores</div>
+                        <table class="tabla">
+                            <tr class="head">
+                                <th>Nombre Completo</th>
+                                <th>Correo Principal</th>
+                                <th>Tipo de Usuario</th>
+                                <th>Teléfono</th>
+                                <th>Usuario</th>
+                                <th>Contraseña</th>
+                            </tr>
+                            <tbody class="body" id="body-admin"></tbody>
+                        </table>
+                    </article>
+                    <article id="tab2">
+                        <div class="titulo-table">Gerente</div>
+                        <table class="tabla">
+                            <tr class="head">
+                                <th>Nombre Completo</th>
+                                <th>Correo Principal</th>
+                                <th>Tipo de Usuario</th>
+                                <th>Teléfono</th>
+                                <th>Usuario</th>
+                                <th>Contraseña</th>
+                            </tr>
+                            <tbody class="body" id="body-profesor"></tbody>
+                        </table>
+                    </article>
+                    <article id="tab3">
+                        <div class="titulo-table">Empleado</div>
+                        <table class="tabla">
+                            <tr class="head">
+                                <th>Nombre Completo</th>
+                                <th>Correo Principal</th>
+                                <th>Tipo de Usuario</th>
+                                <th>Teléfono</th>
+                                <th>Usuario</th>
+                                <th>Contraseña</th>
+                            </tr>
+                            <tbody class="body" id="body-alumno"></tbody>
+                        </table>
+                    </article>
+                    <article id="tab4">
+                        <div class="titulo-table">Cliente Registrado</div>
+                        <table class="tabla">
+                            <tr class="head">
+                                <th>Nombre Completo</th>
+                                <th>Correo Principal</th>
+                                <th>Tipo de Usuario</th>
+                                <th>Teléfono</th>
+                                <th>Usuario</th>
+                                <th>Contraseña</th>
+                            </tr>
+                            <tbody class="body" id="body-all"></tbody>
+                        </table>
+                    </article>
+                    <article id="tab5">
+                        <div class="titulo-table">Cliente no Registrado</div>
+                        <table class="tabla">
+                            <tr class="head">
+                                <th>Nombre Completo</th>
+                                <th>Correo Principal</th>
+                                <th>Tipo de Usuario</th>
+                                <th>Teléfono</th>
+                                <th>Usuario</th>
+                                <th>Contraseña</th>
+                            </tr>
+                            <tbody class="body" id="body-all"></tbody>
+                        </table>
+                    </article>
+                    <article id="tab6">
+                        <div class="titulo-table">Todos los Usuarios</div>
+                        <table class="tabla">
+                            <tr class="head">
+                                <th>Nombre Completo</th>
+                                <th>Correo Principal</th>
+                                <th>Tipo de Usuario</th>
+                                <th>Teléfono</th>
+                                <th>Usuario</th>
+                                <th>Contraseña</th>
+                            </tr>
+                            <tbody class="body" id="body-all"></tbody>
+                        </table>
+                    </article>
+                
+                    <section id="actividades-contenido"></section>
+                
+                    <article id="tab8">
+                        <div class="titulo-table">Datos Personales</div>
+                        <form class="formulario-usuario">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre Completo</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu usuario">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="text" name="telefono" id="telefono" placeholder="Ingresa tu teléfono">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="correoP">Correo Principal</label>
+                                    <input type="text" name="correoP" id="correoP" placeholder="Ingresa tu Correo Principal">
+                                </div>
+                                <div class="form-group">
+                                    <label for="correoA">Correo Alterno</label>
+                                    <input type="text" name="correoA" id="correoA" placeholder="Ingresa tu Correo Alterno">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="usuario">Usuario</label>
+                                    <input type="text" name="usuario" id="usuario" placeholder="Ingresa tu Usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" name="password" id="password" placeholder="Ingresa tu Contraseña">
+                                </div>
+                            </div>
+                            <input type="hidden" name="id" id="id">
+                            <input type="hidden" name="action" id="action" value="set">
+                            <div class="botones-formulario-usuario">
+                                <button id="btn-form-perfil">Enviar</button>
+                            </div>
+                        </form>
+                    </article>
+                    <article id="tab9">
+
+                    </article>
+                    <article id="tab10">
+                        
+                    </article>
+                </div>
+            </div>
+
+            <div class="aside">
+                <form class="formulario">
+                    <button class="btn-form btn-forth">Cerrar Sesión</button>
+                    <p class="fecha" id="fecha"></p>
+                </form>
+            </div>
+
+            <div class="footer">
+                <span>Copyright &copy; 2023 CandyShop | Todos los derechos reservados</span>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>b
